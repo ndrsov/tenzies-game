@@ -2,6 +2,7 @@ import { useState } from 'react';
 import './index.css';
 import Die from './components/Die';
 import { nanoid } from 'nanoid';
+import Confetti from 'react-confetti';
 
 function App() {
   const [dice, setDice] = useState(generateAllNewDice());
@@ -45,6 +46,7 @@ function App() {
 
   return (
     <main className='app'>
+      {gameWon && <Confetti />}
       <h1>Tenzies</h1>
       <p>
         Roll until all dice are the same. Click each die to freeze it at its
