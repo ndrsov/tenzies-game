@@ -70,6 +70,11 @@ button {
   box-shadow: inset 5px 5px 10px rgba(0, 0, 0, 0.2);
 }
 
+.dice-container button.held {
+  background-color: #59e391;
+  color: #fff;
+}
+
 button.roll-dice {
   height: 50px;
   width: 100px;
