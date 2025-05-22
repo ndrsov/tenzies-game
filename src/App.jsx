@@ -51,6 +51,11 @@ function App() {
   return (
     <main className='app'>
       {gameWon && <Confetti />}
+      <div aria-live='polite' className='sr-only'>
+        {gameWon && (
+          <p> Congratulations! You won! Press "New Game" to start again. </p>
+        )}
+      </div>
       <h1>Tenzies</h1>
       <p>
         Roll until all dice are the same. Click each die to freeze it at its
